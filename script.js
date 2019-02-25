@@ -52,8 +52,22 @@ edit2.addEventListener("click", onButtonClick2);
 var stylesheet = document.styleSheets[0];
 var navBar = document.getElementsByClassName("navbar navbar-dark bg-dark box-shadow")[0];
 
-var hide = function() {
-  stylesheet.setAttribute("href", " ");
-  console.log("hello");
+buttonClick = function() {
+
+if (document.styleSheets[0].disabled == false)
+{
+document.styleSheets[0].disabled = true;
 }
-navBar.addEventListener("dblclick", hide);
+else
+{
+document.styleSheets[0].disabled = false;
+console.log("je suis dedans")
+}
+
+}
+
+navBar.addEventListener("dblclick", buttonClick);
+
+
+
+// Fonctionnalité 6 //
